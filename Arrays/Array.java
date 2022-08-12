@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+// This is to find the index of the target element in 2D array.
 public class Array {
     public static void main(String[] args) {
 
