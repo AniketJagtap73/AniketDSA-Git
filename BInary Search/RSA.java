@@ -1,3 +1,5 @@
+// leetcode question : This is a code for rotated sorted array for non-duplicate and duplicate elements.
+
 public class RSA {
     public static void main(String[] args) {
         int[] arr = { 4, 5, 6, 7, 7, 7, 0, 1, 2 };
@@ -42,6 +44,7 @@ public class RSA {
         return -1;
     }
 
+    // for array containing non-duplicate elements.
     static int findPivot(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -62,6 +65,7 @@ public class RSA {
         return -1;
     }
 
+    // for array containing duplicate elements.
     static int findPivotWithDuplicates(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
@@ -74,20 +78,20 @@ public class RSA {
             if (mid > start && arr[mid] < arr[mid - 1]) {
                 return mid - 1;
             }
-
+            // if start, mid and end points to the same element.
             if (arr[mid] == arr[start] && arr[mid] == arr[end]) {
 
                 if (start < end && arr[start] > arr[start + 1]) {
                     return start;
                 }
-                start++;
+                start++; // to ignore duplicate elements.
 
                 if (end > start && arr[end] < arr[end - 1]) {
                     return end - 1;
                 }
                 end--;
             }
-
+            // left side is sorted pivot lies to the right side of the array.
             else if (arr[start] < arr[mid] || (arr[start] == arr[mid] && arr[mid] > arr[end])) {
                 start = mid + 1;
             } else {
