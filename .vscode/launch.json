@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RotationCount",
+            "request": "launch",
+            "mainClass": "RotationCount",
+            "projectName": "Java_4bc4f3c0"
+        },
+        {
+            "type": "java",
             "name": "Launch RSA",
             "request": "launch",
             "mainClass": "RSA",
