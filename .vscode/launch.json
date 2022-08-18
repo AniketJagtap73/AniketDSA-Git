@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReverseInteger",
+            "request": "launch",
+            "mainClass": "ReverseInteger",
+            "projectName": "Java_4bc4f3c0"
+        },
+        {
+            "type": "java",
             "name": "Launch RemDup",
             "request": "launch",
             "mainClass": "RemDup",
