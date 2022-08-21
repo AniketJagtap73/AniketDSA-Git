@@ -12,7 +12,7 @@ public class SelectionSort {
 
     static void selection(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            // last element is initialize as arr.length-i-1 to ignore the last non sorted
+            // last element is initialized as arr.length-i-1 to ignore the last non sorted
             // element of the array for further loops once it is sorted.
             int last = arr.length - i - 1;
             int maxIndex = getMaxIndex(arr, 0, last);
