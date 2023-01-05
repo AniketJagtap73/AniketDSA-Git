@@ -26,7 +26,7 @@ public class Floor {
             }
         }
 
-        return end; // when while loop breaks start = end + 1 , next small number when no ans found
+        return end; // when while loop breaks end  = mid-1 , next small number when no ans found
                     // points to the end .
     }
 

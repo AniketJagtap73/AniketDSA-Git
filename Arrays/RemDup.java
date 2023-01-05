@@ -1,9 +1,9 @@
-// leetcode solution : To return remove the duplicate values from the sorted array and return 
-//the size of the array(with non duplicate values).
+// leetcode solution : remove the duplicate values from the sorted array and return
+//the size of the array(without non-duplicate values).
 
 public class RemDup {
     public static void main(String[] args) {
-        int[] arr = { 0, 1, 1, 2, 2, 2, 3, 3, 4 };
+        int[] arr = {1,2,2,3,4,5,5};
         System.out.println(removeDuplicates(arr));
     }
 
